@@ -1,0 +1,3762 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MindMirror</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<main class="app" id="app">
+
+
+  <!-- ======================================================
+       WELCOME
+       ====================================================== -->
+
+  <section class="screen active" data-screen="welcome">
+
+    <header class="simple-header">
+
+      <div class="brand">
+
+        <div class="brand-logo">
+          M
+        </div>
+
+        <strong>
+          MindMirror
+        </strong>
+
+      </div>
+
+    </header>
+
+
+    <div class="welcome-content">
+
+      <span class="eyebrow">
+        Digitale rust, op jouw manier
+      </span>
+
+
+      <h1>
+        Meer inzicht in je socialemediagebruik
+      </h1>
+
+
+      <p class="lead">
+        MindMirror helpt je herkennen wanneer bewust gebruik
+        ongemerkt overgaat in langer scrollen.
+        De AI geeft inzicht, jij houdt de controle.
+      </p>
+
+
+      <div class="welcome-features">
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ◎
+          </div>
+
+          <div>
+            <strong>
+              Persoonlijke patronen
+            </strong>
+
+            <small>
+              Niet alleen schermtijd, maar ook context en intentie.
+            </small>
+          </div>
+
+        </div>
+
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ?
+          </div>
+
+          <div>
+            <strong>
+              Begrijp de AI
+            </strong>
+
+            <small>
+              Bekijk waarom MindMirror tot een inzicht komt.
+            </small>
+          </div>
+
+        </div>
+
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ✓
+          </div>
+
+          <div>
+            <strong>
+              Jij houdt controle
+            </strong>
+
+            <small>
+              Corrigeer, negeer of verwijder AI-inzichten.
+            </small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        data-go="privacy-setup"
+      >
+        Aan de slag
+      </button>
+
+
+      <button
+        class="btn text full"
+        data-go="about-ai"
+      >
+        Hoe werkt de AI?
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       PRIVACY ONBOARDING
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="privacy-setup"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="welcome"
+      >
+        ‹
+      </button>
+
+      <span>
+        Privacy
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <span class="eyebrow">
+        Stap 1 van 2
+      </span>
+
+
+      <h2>
+        Jouw gegevens, jouw keuze
+      </h2>
+
+
+      <p class="lead-small">
+        MindMirror gebruikt alleen gegevens waarvoor jij toestemming geeft.
+      </p>
+
+
+      <div class="soft-card">
+
+        <div class="privacy-info">
+
+          <span class="check-circle">
+            ✓
+          </span>
+
+          <div>
+            <strong>
+              Geen privéberichten
+            </strong>
+
+            <small>
+              De inhoud van chats wordt nooit gelezen.
+            </small>
+          </div>
+
+        </div>
+
+
+        <div class="privacy-info">
+
+          <span class="check-circle">
+            ✓
+          </span>
+
+          <div>
+            <strong>
+              Data verwijderen
+            </strong>
+
+            <small>
+              Je kunt jouw gegevens altijd wissen.
+            </small>
+          </div>
+
+        </div>
+
+
+        <div class="privacy-info">
+
+          <span class="check-circle">
+            ✓
+          </span>
+
+          <div>
+            <strong>
+              AI pauzeren
+            </strong>
+
+            <small>
+              Patroonherkenning kan altijd worden gestopt.
+            </small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <h3>
+        Welke gegevens mag MindMirror gebruiken?
+      </h3>
+
+
+      <div class="settings-card">
+
+        <div class="setting-row">
+
+          <div>
+            <strong>
+              Welke apps ik gebruik
+            </strong>
+
+            <small>
+              Bijvoorbeeld TikTok en Instagram.
+            </small>
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+            <strong>
+              Gebruiksduur
+            </strong>
+
+            <small>
+              Hoe lang apps geopend zijn.
+            </small>
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+            <strong>
+              Tijdstip
+            </strong>
+
+            <small>
+              Wanneer apps worden geopend.
+            </small>
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+            <strong>
+              Studietijd
+            </strong>
+
+            <small>
+              Alleen momenten die jij zelf instelt.
+            </small>
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+            <strong>
+              Locatie
+            </strong>
+
+            <small>
+              Optioneel.
+            </small>
+          </div>
+
+          <button
+            class="toggle"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row disabled-setting">
+
+          <div>
+            <strong>
+              Privéberichten
+            </strong>
+
+            <small>
+              Wordt nooit gebruikt.
+            </small>
+          </div>
+
+          <span class="never-chip">
+            Nooit
+          </span>
+
+        </div>
+
+
+        <div class="setting-row disabled-setting">
+
+          <div>
+            <strong>
+              Foto's
+            </strong>
+
+            <small>
+              Worden nooit gebruikt.
+            </small>
+          </div>
+
+          <span class="never-chip">
+            Nooit
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        data-go="home"
+      >
+        Opslaan en doorgaan
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       HOME
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="home"
+  >
+
+    <header class="home-header">
+
+      <div>
+
+        <span class="date-label">
+          DONDERDAG, 1 OKTOBER
+        </span>
+
+        <h2 class="home-title">
+          Goedemiddag, Siman
+        </h2>
+
+      </div>
+
+
+      <button
+        class="avatar"
+        data-go="profile"
+      >
+        S
+      </button>
+
+    </header>
+
+
+    <div class="content home-content">
+
+
+      <!-- AI INSIGHT -->
+
+      <article class="main-insight">
+
+        <div class="insight-label">
+
+          <span>
+            ◎
+          </span>
+
+          Nieuw patroon
+
+          <span class="status-dot"></span>
+
+        </div>
+
+
+        <h3>
+          Nieuw patroon gevonden
+        </h3>
+
+
+        <p>
+          MindMirror denkt dat je TikTok vaak opent tijdens studiemomenten.
+        </p>
+
+
+        <small>
+          Dit patroon werd deze week 4 keer herkend.
+        </small>
+
+
+        <button
+          class="btn primary"
+          data-go="insight"
+        >
+          Bekijk inzicht →
+        </button>
+
+      </article>
+
+
+
+      <!-- JOUW WEEK -->
+
+      <section class="section-block">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-label">
+              OVERZICHT
+            </span>
+
+            <h3>
+              Jouw week
+            </h3>
+
+          </div>
+
+
+          <button
+            class="text-link"
+            data-go="insights"
+          >
+            Bekijk alles
+            <span>›</span>
+          </button>
+
+        </div>
+
+
+        <div
+          class="week-card clickable-week"
+          data-go="insights"
+          tabindex="0"
+          role="button"
+        >
+
+          <div class="week-card-top">
+
+            <div class="week-metric">
+
+              <span class="metric-value">
+                18
+              </span>
+
+              <span class="metric-label">
+                automatische openingen
+              </span>
+
+            </div>
+
+
+            <div class="metric-divider"></div>
+
+
+            <div class="week-metric">
+
+              <span class="metric-value">
+                21 min
+              </span>
+
+              <span class="metric-label">
+                gemiddelde sessie
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="week-chart-header">
+
+            <span>
+              Gebruik deze week
+            </span>
+
+            <span class="trend-chip">
+              ↓ 8%
+            </span>
+
+          </div>
+
+
+          <div class="chart">
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height:48%"></div>
+              <span>M</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height:76%"></div>
+              <span>D</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height:42%"></div>
+              <span>W</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar active" style="height:88%"></div>
+              <span>D</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar" style="height:62%"></div>
+              <span>V</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar pale" style="height:28%"></div>
+              <span>Z</span>
+            </div>
+
+            <div class="chart-column">
+              <div class="chart-bar pale" style="height:22%"></div>
+              <span>Z</span>
+            </div>
+
+          </div>
+
+
+          <div class="week-footer">
+
+            <div>
+
+              <span class="footer-dot"></span>
+
+              TikTok kwam het vaakst voor
+
+            </div>
+
+            <span class="week-arrow">
+              ›
+            </span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- TODAY -->
+
+      <section class="section-block">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-label">
+              VANDAAG
+            </span>
+
+            <h3>
+              Jouw instellingen
+            </h3>
+
+          </div>
+
+        </div>
+
+
+        <div class="list-card">
+
+
+          <!-- KLIKBARE STUDIETIJD -->
+
+          <button
+            class="list-item clickable"
+            data-go="study-time"
+          >
+
+            <span class="list-icon">
+              ◷
+            </span>
+
+            <div>
+
+              <strong>
+                Studietijd
+              </strong>
+
+              <small id="home-study-time">
+                Vandaag 14:00 – 17:00
+              </small>
+
+            </div>
+
+            <span class="chevron">
+              ›
+            </span>
+
+          </button>
+
+
+
+          <div class="list-item">
+
+            <span class="list-icon">
+              ◉
+            </span>
+
+            <div>
+
+              <strong>
+                AI-analyse
+              </strong>
+
+              <small>
+                Alleen toegestane gegevens
+              </small>
+
+            </div>
+
+            <span class="active-chip">
+              Actief
+            </span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <nav
+      class="bottom-nav"
+      data-bottom-nav="home"
+    ></nav>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       STUDY TIME
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="study-time"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="home"
+      >
+        ‹
+      </button>
+
+      <span>
+        Studietijd
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <span class="eyebrow">
+        Focusmoment
+      </span>
+
+
+      <h2>
+        Wanneer wil je studeren?
+      </h2>
+
+
+      <p class="lead-small">
+        MindMirror gebruikt deze tijden alleen om patronen
+        tijdens jouw studiemomenten te herkennen.
+      </p>
+
+
+      <div class="soft-card">
+
+        <div class="form-group">
+
+          <label for="study-start">
+            Starttijd
+          </label>
+
+          <input
+            type="time"
+            id="study-start"
+            value="14:00"
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="study-end">
+            Eindtijd
+          </label>
+
+          <input
+            type="time"
+            id="study-end"
+            value="17:00"
+          >
+
+        </div>
+
+      </div>
+
+
+      <h3>
+        Op welke dagen?
+      </h3>
+
+
+      <div class="day-selector">
+
+        <button
+          type="button"
+          class="day-button selected"
+        >
+          Ma
+        </button>
+
+        <button
+          type="button"
+          class="day-button selected"
+        >
+          Di
+        </button>
+
+        <button
+          type="button"
+          class="day-button selected"
+        >
+          Wo
+        </button>
+
+        <button
+          type="button"
+          class="day-button selected"
+        >
+          Do
+        </button>
+
+        <button
+          type="button"
+          class="day-button selected"
+        >
+          Vr
+        </button>
+
+        <button
+          type="button"
+          class="day-button"
+        >
+          Za
+        </button>
+
+        <button
+          type="button"
+          class="day-button"
+        >
+          Zo
+        </button>
+
+      </div>
+
+
+      <div class="settings-card study-settings">
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              AI-inzichten tijdens studietijd
+            </strong>
+
+            <small>
+              MindMirror mag patronen herkennen tijdens deze periode.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              Focus-reminder
+            </strong>
+
+            <small>
+              Alleen wanneer gebruik langer doorgaat dan gepland.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+      </div>
+
+
+      <div class="control-note">
+
+        <span>
+          ✓
+        </span>
+
+        <p>
+          <strong>
+            Jij houdt controle.
+          </strong>
+
+          Je kunt je studietijd altijd aanpassen of tijdelijk uitschakelen.
+        </p>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        id="save-study-time"
+      >
+        Studietijd opslaan
+      </button>
+
+
+      <button
+        class="btn text full"
+        data-go="home"
+      >
+        Annuleren
+      </button>
+
+
+      <div
+        class="toast"
+        id="study-time-toast"
+      >
+        Studietijd opgeslagen.
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       AI INSIGHT
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="insight"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="home"
+      >
+        ‹
+      </button>
+
+      <span>
+        AI-inzicht
+      </span>
+
+      <button
+        class="info-btn"
+        data-go="about-ai"
+      >
+        i
+      </button>
+
+    </header>
+
+
+    <div class="content">
+
+      <span class="eyebrow">
+        Dit patroon viel op
+      </span>
+
+
+      <h2>
+        Je opent TikTok vaak kort nadat je begint met studeren
+      </h2>
+
+
+      <div class="confidence-card">
+
+        <div class="confidence-header">
+
+          <span class="confidence-chip">
+            Redelijke aanwijzing
+          </span>
+
+          <span class="uncertain">
+            Niet zeker
+          </span>
+
+        </div>
+
+        <p>
+          Dit is een AI-interpretatie, geen feit.
+        </p>
+
+      </div>
+
+
+      <div class="pattern-card">
+
+        <div class="pattern-row">
+
+          <span>
+            Maandag
+          </span>
+
+          <strong>
+            19:12
+          </strong>
+
+          <small>
+            TikTok · 17 minuten
+          </small>
+
+        </div>
+
+
+        <div class="pattern-row">
+
+          <span>
+            Dinsdag
+          </span>
+
+          <strong>
+            14:08
+          </strong>
+
+          <small>
+            TikTok · 23 minuten
+          </small>
+
+        </div>
+
+
+        <div class="pattern-row">
+
+          <span>
+            Donderdag
+          </span>
+
+          <strong>
+            16:21
+          </strong>
+
+          <small>
+            TikTok · 19 minuten
+          </small>
+
+        </div>
+
+
+        <div class="pattern-row">
+
+          <span>
+            Vrijdag
+          </span>
+
+          <strong>
+            11:34
+          </strong>
+
+          <small>
+            TikTok · 14 minuten
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <div class="ai-callout">
+
+        <div class="ai-badge">
+          AI
+        </div>
+
+        <div>
+
+          <strong>
+            Mogelijke trigger: uitstelgedrag
+          </strong>
+
+          <p>
+            MindMirror zag een terugkerend patroon rond jouw studiemomenten.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn secondary full"
+        data-go="explain"
+      >
+        Waarom denkt MindMirror dit?
+      </button>
+
+
+      <div class="question-card">
+
+        <h3>
+          Klopt dit volgens jou?
+        </h3>
+
+        <p>
+          Jij kent de context beter dan de AI.
+        </p>
+
+
+        <div class="three-buttons">
+
+          <button
+            data-go="suggestion"
+          >
+            Ja
+          </button>
+
+          <button
+            data-go="failure"
+          >
+            Gedeeltelijk
+          </button>
+
+          <button
+            data-go="failure"
+          >
+            Nee
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       EXPLAINABLE AI
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="explain"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="insight"
+      >
+        ‹
+      </button>
+
+      <span>
+        Waarom dit inzicht?
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <h2>
+        Zo kwam MindMirror tot dit inzicht
+      </h2>
+
+
+      <p class="lead-small">
+        MindMirror kijkt alleen naar gegevens waarvoor jij toestemming gaf.
+      </p>
+
+
+      <div class="explain-flow">
+
+        <div class="explain-step">
+
+          <span>
+            1
+          </span>
+
+          <div>
+
+            <strong>
+              Studietijd
+            </strong>
+
+            <small>
+              Jij gaf aan dat je tussen 14:00 en 17:00 studeerde.
+            </small>
+
+          </div>
+
+        </div>
+
+
+        <div class="flow-line"></div>
+
+
+        <div class="explain-step">
+
+          <span>
+            2
+          </span>
+
+          <div>
+
+            <strong>
+              TikTok geopend
+            </strong>
+
+            <small>
+              TikTok werd meerdere keren tijdens deze momenten geopend.
+            </small>
+
+          </div>
+
+        </div>
+
+
+        <div class="flow-line"></div>
+
+
+        <div class="explain-step">
+
+          <span>
+            3
+          </span>
+
+          <div>
+
+            <strong>
+              AI zag een patroon
+            </strong>
+
+            <small>
+              De AI vermoedde uitstelgedrag.
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="data-columns">
+
+        <div>
+
+          <h3>
+            Wel gebruikt
+          </h3>
+
+          <p>✓ Appnaam</p>
+          <p>✓ Tijdstip</p>
+          <p>✓ Gebruiksduur</p>
+          <p>✓ Studietijd</p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Nooit gebruikt
+          </h3>
+
+          <p>× Privéberichten</p>
+          <p>× Foto's</p>
+          <p>× Contacten</p>
+          <p>× Gespreksinhoud</p>
+
+        </div>
+
+      </div>
+
+
+      <div class="warning-card">
+
+        <span>
+          !
+        </span>
+
+        <div>
+
+          <strong>
+            MindMirror kan fout zitten
+          </strong>
+
+          <p>
+            De AI weet niet wat jij denkt of waarom je een app opent.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        data-go="failure"
+      >
+        Controleer dit moment
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       FAILURE MOMENT
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="failure"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="insight"
+      >
+        ‹
+      </button>
+
+      <span>
+        Controleer AI
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <span class="eyebrow warning-text">
+        AI kan fout zitten
+      </span>
+
+
+      <h2>
+        Klopt deze interpretatie?
+      </h2>
+
+
+      <div class="failure-card">
+
+        <div class="ai-badge warning">
+          AI
+        </div>
+
+        <div>
+
+          <small>
+            MindMirror denkt:
+          </small>
+
+          <strong>
+            “Je opende TikTok om studeren uit te stellen.”
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="context-card">
+
+        <div class="context-icon">
+          ⌕
+        </div>
+
+        <div>
+
+          <strong>
+            Misschien had je een ander doel
+          </strong>
+
+          <p>
+            Bijvoorbeeld een tutorial zoeken voor een schoolopdracht.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <h3>
+        Wat gebeurde er echt?
+      </h3>
+
+
+      <div
+        class="radio-list"
+        id="failure-options"
+      >
+
+        <button
+          class="radio-option"
+          data-correction="uitstel"
+        >
+
+          <span class="radio-dot"></span>
+
+          Ik stelde studeren uit
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-correction="school"
+        >
+
+          <span class="radio-dot"></span>
+
+          Ik zocht informatie voor school
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-correction="ontspanning"
+        >
+
+          <span class="radio-dot"></span>
+
+          Ik wilde ontspannen
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-correction="bericht"
+        >
+
+          <span class="radio-dot"></span>
+
+          Ik reageerde op iemand
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-correction="anders"
+        >
+
+          <span class="radio-dot"></span>
+
+          Anders
+
+        </button>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        id="save-correction"
+        disabled
+      >
+        AI-inzicht corrigeren
+      </button>
+
+
+      <button
+        class="btn text full"
+        data-go="explain"
+      >
+        Bekijk eerst de uitleg
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       CORRECTED
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="corrected"
+  >
+
+    <header class="topbar">
+
+      <div></div>
+
+      <span>
+        Correctie
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content center-content">
+
+      <div class="success-icon">
+        ✓
+      </div>
+
+
+      <span class="eyebrow">
+        Aangepast
+      </span>
+
+
+      <h2>
+        Bedankt, het inzicht is aangepast
+      </h2>
+
+
+      <p class="lead-small centered-text">
+        Dit moment wordt niet meer gezien als uitstelgedrag.
+      </p>
+
+
+      <div class="soft-card left-text">
+
+        <h3>
+          Nieuwe context
+        </h3>
+
+
+        <div class="summary-row">
+
+          <span>
+            Moment
+          </span>
+
+          <strong>
+            Donderdag 16:21
+          </strong>
+
+        </div>
+
+
+        <div class="summary-row">
+
+          <span>
+            App
+          </span>
+
+          <strong>
+            TikTok
+          </strong>
+
+        </div>
+
+
+        <div class="summary-row">
+
+          <span>
+            Jouw correctie
+          </span>
+
+          <strong>
+            Informatie voor school
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <p class="small-note">
+        Je kunt AI-inzichten altijd opnieuw aanpassen of verwijderen.
+      </p>
+
+
+      <button
+        class="btn primary full"
+        data-go="suggestion"
+      >
+        Doorgaan
+      </button>
+
+
+      <button
+        class="btn danger-outline full"
+        data-go="home"
+      >
+        Dit inzicht verwijderen
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       AI SUGGESTION
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="suggestion"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="home"
+      >
+        ‹
+      </button>
+
+      <span>
+        Voorstel
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <span class="eyebrow">
+        Vrijwillige ondersteuning
+      </span>
+
+
+      <h2>
+        Wil je iets proberen?
+      </h2>
+
+
+      <div class="stat-card">
+
+        <strong>
+          18 min
+        </strong>
+
+        <p>
+          Op andere studiemomenten bleef je gemiddeld
+          18 minuten langer kijken dan gepland.
+        </p>
+
+      </div>
+
+
+      <div class="suggestion-card">
+
+        <div class="suggestion-icon">
+          ◷
+        </div>
+
+
+        <h3>
+          Korte focus-reminder
+        </h3>
+
+
+        <p>
+          Wil je tijdens studiemomenten na 10 minuten
+          een korte reminder ontvangen?
+        </p>
+
+
+        <div class="notification-preview">
+
+          <small>
+            MindMirror
+          </small>
+
+          <strong>
+            Je wilde nog even focussen
+          </strong>
+
+          <p>
+            Wil je TikTok toch blijven gebruiken?
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        data-suggestion="yes"
+      >
+        Ja, probeer dit
+      </button>
+
+
+      <button
+        class="btn secondary full"
+        data-suggestion="later"
+      >
+        Later
+      </button>
+
+
+      <button
+        class="btn text full"
+        data-suggestion="no"
+      >
+        Nee, niet voorstellen
+      </button>
+
+
+      <div class="control-note">
+
+        <span>
+          ✓
+        </span>
+
+        <p>
+          <strong>
+            Jij houdt controle.
+          </strong>
+
+          MindMirror blokkeert nooit automatisch een app.
+        </p>
+
+      </div>
+
+
+      <div
+        class="toast"
+        id="suggestion-toast"
+      ></div>
+
+
+      <button
+        class="btn secondary full"
+        data-go="privacy"
+      >
+        Privacy & controle bekijken
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       INSIGHTS
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="insights"
+  >
+
+    <header class="page-header">
+
+      <h2>
+        Inzichten
+      </h2>
+
+
+      <button
+        class="info-btn"
+        data-go="about-ai"
+      >
+        i
+      </button>
+
+    </header>
+
+
+    <div class="content main-page-content">
+
+
+      <div class="filter-tabs">
+
+        <button>
+          Vandaag
+        </button>
+
+        <button class="selected">
+          Deze week
+        </button>
+
+        <button>
+          Deze maand
+        </button>
+
+      </div>
+
+
+      <div class="insights-grid">
+
+
+        <div class="mini-card">
+
+          <small>
+            Meest voorkomende trigger
+          </small>
+
+          <strong>
+            Verveling
+          </strong>
+
+          <span>
+            42% van momenten
+          </span>
+
+        </div>
+
+
+        <div class="mini-card">
+
+          <small>
+            Meest voorkomende context
+          </small>
+
+          <strong>
+            Studeren
+          </strong>
+
+          <span>
+            4 momenten
+          </span>
+
+        </div>
+
+
+        <div class="mini-card">
+
+          <small>
+            Vaakst automatisch geopend
+          </small>
+
+          <strong>
+            TikTok
+          </strong>
+
+          <span>
+            18 keer
+          </span>
+
+        </div>
+
+
+        <div class="mini-card">
+
+          <small>
+            Piekmoment
+          </small>
+
+          <strong>
+            20–23u
+          </strong>
+
+          <span>
+            vooral doordeweeks
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="section-heading">
+
+        <h3>
+          Recente patronen
+        </h3>
+
+      </div>
+
+
+      <div class="list-card">
+
+
+        <button
+          class="list-item clickable"
+          data-go="insight"
+        >
+
+          <span class="list-icon">
+            ◎
+          </span>
+
+          <div>
+
+            <strong>
+              TikTok tijdens studeren
+            </strong>
+
+            <small>
+              Redelijke aanwijzing · 4 keer
+            </small>
+
+          </div>
+
+          <span class="chevron">
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="list-item clickable"
+          data-go="insight"
+        >
+
+          <span class="list-icon">
+            ☾
+          </span>
+
+          <div>
+
+            <strong>
+              Instagram voor het slapen
+            </strong>
+
+            <small>
+              Zwakke aanwijzing · 2 keer
+            </small>
+
+          </div>
+
+          <span class="chevron">
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="list-item clickable"
+          data-go="insight"
+        >
+
+          <span class="list-icon">
+            ◷
+          </span>
+
+          <div>
+
+            <strong>
+              Gebruik tijdens wachttijd
+            </strong>
+
+            <small>
+              Redelijke aanwijzing · 5 keer
+            </small>
+
+          </div>
+
+          <span class="chevron">
+            ›
+          </span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <nav
+      class="bottom-nav"
+      data-bottom-nav="insights"
+    ></nav>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       GOALS
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="goals"
+  >
+
+    <header class="page-header">
+
+      <h2>
+        Mijn doelen
+      </h2>
+
+
+      <button
+        class="add-btn"
+        data-go="new-goal"
+      >
+        +
+      </button>
+
+    </header>
+
+
+    <div class="content main-page-content">
+
+
+      <div class="goal-card">
+
+        <div class="goal-header">
+
+          <span class="goal-icon">
+            ◎
+          </span>
+
+          <span class="active-chip">
+            Actief
+          </span>
+
+        </div>
+
+
+        <h3>
+          Minder automatisch TikTok openen tijdens studeren
+        </h3>
+
+
+        <p>
+          Reminder na 10 minuten · alleen tijdens studietijd
+        </p>
+
+
+        <div class="progress">
+
+          <span style="width:57%"></span>
+
+        </div>
+
+
+        <small>
+          4 van 7 dagen volgens je doel
+        </small>
+
+      </div>
+
+
+      <div class="goal-card">
+
+        <div class="goal-header">
+
+          <span class="goal-icon">
+            ☾
+          </span>
+
+          <span class="paused-chip">
+            Gepauzeerd
+          </span>
+
+        </div>
+
+
+        <h3>
+          Geen Instagram vlak voor slapen
+        </h3>
+
+
+        <p>
+          Door jou gepauzeerd tot maandag
+        </p>
+
+      </div>
+
+
+      <button
+        class="btn secondary full"
+        data-go="new-goal"
+      >
+        + Nieuw persoonlijk doel
+      </button>
+
+    </div>
+
+
+    <nav
+      class="bottom-nav"
+      data-bottom-nav="goals"
+    ></nav>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       NEW GOAL
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="new-goal"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="goals"
+      >
+        ‹
+      </button>
+
+      <span>
+        Nieuw doel
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <h2>
+        Waar wil je bewuster mee omgaan?
+      </h2>
+
+
+      <div class="radio-list single-select">
+
+        <button class="radio-option">
+
+          <span class="radio-dot"></span>
+
+          Automatisch apps openen
+
+        </button>
+
+
+        <button class="radio-option">
+
+          <span class="radio-dot"></span>
+
+          Te lang blijven scrollen
+
+        </button>
+
+
+        <button class="radio-option">
+
+          <span class="radio-dot"></span>
+
+          Sociale media tijdens studeren
+
+        </button>
+
+
+        <button class="radio-option">
+
+          <span class="radio-dot"></span>
+
+          Sociale media voor slapen
+
+        </button>
+
+      </div>
+
+
+      <h3>
+        Hoe wil je geholpen worden?
+      </h3>
+
+
+      <div class="radio-list single-select">
+
+        <button class="radio-option">
+
+          <span class="radio-dot"></span>
+
+          Alleen inzicht tonen
+
+        </button>
+
+
+        <button class="radio-option">
+
+          <span class="radio-dot"></span>
+
+          Korte reminder
+
+        </button>
+
+
+        <button class="radio-option">
+
+          <span class="radio-dot"></span>
+
+          Reflectievraag
+
+        </button>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        data-go="goals"
+      >
+        Doel opslaan
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       PROFILE
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="profile"
+  >
+
+    <header class="page-header">
+
+      <h2>
+        Profiel
+      </h2>
+
+    </header>
+
+
+    <div class="content main-page-content">
+
+
+      <div class="profile-header">
+
+        <div class="profile-avatar">
+          S
+        </div>
+
+        <div>
+
+          <h3>
+            Siman
+          </h3>
+
+          <p>
+            siman@student.nl
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <span class="menu-label">
+        ACCOUNT
+      </span>
+
+
+      <div class="menu-card">
+
+        <button
+          class="menu-row"
+          data-go="account"
+        >
+
+          <span class="menu-icon">
+            ♙
+          </span>
+
+          <div>
+
+            <strong>
+              Account
+            </strong>
+
+            <small>
+              Naam, e-mail en wachtwoord
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="menu-row"
+          data-go="notifications"
+        >
+
+          <span class="menu-icon">
+            ◷
+          </span>
+
+          <div>
+
+            <strong>
+              Meldingen
+            </strong>
+
+            <small>
+              Timing en frequentie
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <span class="menu-label">
+        PRIVACY & AI
+      </span>
+
+
+      <div class="menu-card">
+
+        <button
+          class="menu-row"
+          data-go="privacy"
+        >
+
+          <span class="menu-icon">
+            ◇
+          </span>
+
+          <div>
+
+            <strong>
+              Privacy & controle
+            </strong>
+
+            <small>
+              Datagebruik en AI pauzeren
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="menu-row"
+          data-go="ai-history"
+        >
+
+          <span class="menu-icon">
+            ◎
+          </span>
+
+          <div>
+
+            <strong>
+              AI-activiteit
+            </strong>
+
+            <small>
+              Bekijk wat de AI deed
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="menu-row"
+          data-go="about-ai"
+        >
+
+          <span class="menu-icon">
+            i
+          </span>
+
+          <div>
+
+            <strong>
+              Over MindMirror AI
+            </strong>
+
+            <small>
+              Wat AI wel en niet kan
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <span class="menu-label">
+        GEGEVENS
+      </span>
+
+
+      <div class="menu-card">
+
+        <button
+          class="menu-row"
+          data-go="data-center"
+        >
+
+          <span class="menu-icon">
+            ⇩
+          </span>
+
+          <div>
+
+            <strong>
+              Mijn gegevens
+            </strong>
+
+            <small>
+              Bekijken of verwijderen
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <p class="legal-text">
+        MindMirror geeft inzicht in digitaal gedrag
+        en is geen medische of diagnostische tool.
+      </p>
+
+    </div>
+
+
+    <nav
+      class="bottom-nav"
+      data-bottom-nav="profile"
+    ></nav>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       ACCOUNT
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="account"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="profile"
+      >
+        ‹
+      </button>
+
+      <span>
+        Account
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+
+      <div class="form-group">
+
+        <label>
+          Naam
+        </label>
+
+        <input
+          type="text"
+          value="Siman"
+        >
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label>
+          E-mailadres
+        </label>
+
+        <input
+          type="email"
+          value="siman@student.nl"
+        >
+
+      </div>
+
+
+      <div class="menu-card">
+
+        <button
+          class="menu-row"
+          data-go="change-password"
+        >
+
+          <span class="menu-icon">
+            ◇
+          </span>
+
+          <div>
+
+            <strong>
+              Wachtwoord wijzigen
+            </strong>
+
+            <small>
+              Laatst gewijzigd 3 maanden geleden
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        id="save-account"
+      >
+        Wijzigingen opslaan
+      </button>
+
+
+      <div
+        class="toast"
+        id="account-toast"
+      >
+        Accountgegevens opgeslagen.
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       CHANGE PASSWORD
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="change-password"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="account"
+      >
+        ‹
+      </button>
+
+      <span>
+        Wachtwoord wijzigen
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <h2>
+        Maak je account veilig
+      </h2>
+
+
+      <p class="lead-small">
+        Gebruik minimaal 8 tekens met een hoofdletter,
+        kleine letter en cijfer.
+      </p>
+
+
+      <form id="password-form">
+
+
+        <div class="form-group">
+
+          <label>
+            Huidig wachtwoord
+          </label>
+
+
+          <div class="password-field">
+
+            <input
+              id="current-password"
+              type="password"
+              placeholder="••••••••"
+            >
+
+            <button
+              type="button"
+              data-show-password="current-password"
+            >
+              Toon
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>
+            Nieuw wachtwoord
+          </label>
+
+
+          <div class="password-field">
+
+            <input
+              id="new-password"
+              type="password"
+              placeholder="Minimaal 8 tekens"
+            >
+
+            <button
+              type="button"
+              data-show-password="new-password"
+            >
+              Toon
+            </button>
+
+          </div>
+
+
+          <div class="password-meter">
+
+            <span id="password-meter"></span>
+
+          </div>
+
+
+          <small
+            id="password-strength"
+            class="input-note"
+          >
+            Nog geen wachtwoord ingevoerd.
+          </small>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>
+            Herhaal nieuw wachtwoord
+          </label>
+
+          <input
+            id="confirm-password"
+            type="password"
+            placeholder="Herhaal wachtwoord"
+          >
+
+        </div>
+
+
+        <button
+          class="btn primary full"
+          type="submit"
+        >
+          Wachtwoord opslaan
+        </button>
+
+      </form>
+
+
+      <div
+        class="toast error-toast"
+        id="password-error"
+      ></div>
+
+
+      <div
+        class="toast"
+        id="password-success"
+      >
+        Wachtwoord succesvol gewijzigd.
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       NOTIFICATIONS
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="notifications"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="profile"
+      >
+        ‹
+      </button>
+
+      <span>
+        Meldingen
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+
+      <div class="settings-card">
+
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              Focus-reminders
+            </strong>
+
+            <small>
+              Alleen tijdens ingestelde momenten.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              Nieuwe AI-inzichten
+            </strong>
+
+            <small>
+              Maximaal één melding per dag.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              Weekoverzicht
+            </strong>
+
+            <small>
+              Zondag om 19:00.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+      </div>
+
+
+      <div class="soft-card">
+
+        <h3>
+          Rustmodus
+        </h3>
+
+        <p>
+          Geen wellbeing-meldingen tijdens vakantie
+          of momenten waarop je rust wilt.
+        </p>
+
+
+        <button
+          class="btn secondary full"
+          id="vacation-mode"
+        >
+          Vakantiemodus inschakelen
+        </button>
+
+      </div>
+
+
+      <div
+        class="toast"
+        id="vacation-toast"
+      >
+        Vakantiemodus staat aan.
+        Meldingen zijn tijdelijk gepauzeerd.
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       PRIVACY SETTINGS
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="privacy"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="profile"
+      >
+        ‹
+      </button>
+
+      <span>
+        Privacy & controle
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <p class="lead-small">
+        Jij bepaalt welke gegevens MindMirror mag gebruiken.
+      </p>
+
+
+      <div class="settings-card">
+
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              Appgebruik analyseren
+            </strong>
+
+            <small>
+              Voor patroonherkenning.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              Tijdstip gebruiken
+            </strong>
+
+            <small>
+              Voor patronen door de dag heen.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              Studietijd gebruiken
+            </strong>
+
+            <small>
+              Alleen zelf ingestelde momenten.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle on"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+
+            <strong>
+              Locatie gebruiken
+            </strong>
+
+            <small>
+              Optioneel.
+            </small>
+
+          </div>
+
+          <button
+            class="toggle"
+            data-toggle
+          ></button>
+
+        </div>
+
+
+        <div class="setting-row disabled-setting">
+
+          <div>
+
+            <strong>
+              Privéberichten
+            </strong>
+
+            <small>
+              Worden nooit gebruikt.
+            </small>
+
+          </div>
+
+          <span class="never-chip">
+            Nooit
+          </span>
+
+        </div>
+
+
+        <div class="setting-row disabled-setting">
+
+          <div>
+
+            <strong>
+              Foto's
+            </strong>
+
+            <small>
+              Worden nooit gebruikt.
+            </small>
+
+          </div>
+
+          <span class="never-chip">
+            Nooit
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn secondary full"
+        data-go="pause-ai"
+      >
+        AI-analyse pauzeren
+      </button>
+
+
+      <button
+        class="btn secondary full"
+        data-go="data-center"
+      >
+        Mijn gegevens beheren
+      </button>
+
+
+      <button
+        class="btn text full"
+        data-go="about-ai"
+      >
+        Hoe gebruikt MindMirror AI?
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       PAUSE AI
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="pause-ai"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="privacy"
+      >
+        ‹
+      </button>
+
+      <span>
+        AI pauzeren
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <h2>
+        AI-analyse pauzeren?
+      </h2>
+
+
+      <p class="lead-small">
+        Tijdens de pauze worden geen nieuwe gebruikspatronen geanalyseerd.
+      </p>
+
+
+      <div
+        class="radio-list"
+        id="pause-options"
+      >
+
+        <button
+          class="radio-option"
+          data-pause="1 uur"
+        >
+
+          <span class="radio-dot"></span>
+
+          1 uur
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-pause="Vandaag"
+        >
+
+          <span class="radio-dot"></span>
+
+          Vandaag
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-pause="1 week"
+        >
+
+          <span class="radio-dot"></span>
+
+          1 week
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-pause="Tot ik het weer aanzet"
+        >
+
+          <span class="radio-dot"></span>
+
+          Tot ik het weer aanzet
+
+        </button>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        id="confirm-pause"
+        disabled
+      >
+        Pauzeren
+      </button>
+
+
+      <button
+        class="btn secondary full"
+        data-go="privacy"
+      >
+        Annuleren
+      </button>
+
+
+      <div
+        class="toast"
+        id="pause-toast"
+      ></div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       DATA CENTER
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="data-center"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="profile"
+      >
+        ‹
+      </button>
+
+      <span>
+        Mijn gegevens
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+
+      <div class="data-summary">
+
+        <div>
+
+          <small>
+            Opgeslagen periode
+          </small>
+
+          <strong>
+            14 dagen
+          </strong>
+
+        </div>
+
+
+        <div>
+
+          <small>
+            Herkende patronen
+          </small>
+
+          <strong>
+            3
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="menu-card">
+
+
+        <button
+          class="menu-row"
+          id="export-data"
+        >
+
+          <span class="menu-icon">
+            ⇩
+          </span>
+
+          <div>
+
+            <strong>
+              Gegevens exporteren
+            </strong>
+
+            <small>
+              Download een overzicht.
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+
+        <button
+          class="menu-row"
+          data-go="delete-data"
+        >
+
+          <span class="menu-icon">
+            ×
+          </span>
+
+          <div>
+
+            <strong>
+              Gegevens verwijderen
+            </strong>
+
+            <small>
+              Kies zelf welke periode.
+            </small>
+
+          </div>
+
+          <span>
+            ›
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <div class="soft-card">
+
+        <h3>
+          Wat bewaart MindMirror?
+        </h3>
+
+        <p>
+          Appnaam, tijdstip, gebruiksduur en context
+          waarvoor jij toestemming hebt gegeven.
+        </p>
+
+        <p>
+          Privéberichten, foto's en contacten worden niet opgeslagen.
+        </p>
+
+      </div>
+
+
+      <div
+        class="toast"
+        id="export-toast"
+      >
+        Demo-export voorbereid.
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       DELETE DATA
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="delete-data"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="data-center"
+      >
+        ‹
+      </button>
+
+      <span>
+        Gegevens verwijderen
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <h2>
+        Welke gegevens wil je verwijderen?
+      </h2>
+
+
+      <div
+        class="radio-list"
+        id="delete-options"
+      >
+
+        <button
+          class="radio-option"
+          data-delete="Vandaag"
+        >
+
+          <span class="radio-dot"></span>
+
+          Alleen vandaag
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-delete="Laatste 7 dagen"
+        >
+
+          <span class="radio-dot"></span>
+
+          Laatste 7 dagen
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-delete="Alle gebruiksgegevens"
+        >
+
+          <span class="radio-dot"></span>
+
+          Alle gebruiksgegevens
+
+        </button>
+
+
+        <button
+          class="radio-option"
+          data-delete="Alle MindMirror-gegevens"
+        >
+
+          <span class="radio-dot"></span>
+
+          Alle MindMirror-gegevens
+
+        </button>
+
+      </div>
+
+
+      <div class="warning-card">
+
+        <span>
+          !
+        </span>
+
+        <div>
+
+          <strong>
+            Let op
+          </strong>
+
+          <p>
+            Verwijderde gegevens kunnen niet worden hersteld.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn danger full"
+        id="confirm-delete"
+        disabled
+      >
+        Geselecteerde gegevens verwijderen
+      </button>
+
+
+      <button
+        class="btn secondary full"
+        data-go="data-center"
+      >
+        Annuleren
+      </button>
+
+
+      <div
+        class="toast"
+        id="delete-toast"
+      ></div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       AI ACTIVITY
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="ai-history"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="profile"
+      >
+        ‹
+      </button>
+
+      <span>
+        AI-activiteit
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+
+      <div class="activity-item">
+
+        <span class="activity-dot"></span>
+
+        <div>
+
+          <small>
+            Vandaag · 11:34
+          </small>
+
+          <strong>
+            Patroon herkend
+          </strong>
+
+          <p>
+            TikTok tijdens studietijd
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="activity-item">
+
+        <span class="activity-dot user"></span>
+
+        <div>
+
+          <small>
+            Vandaag · 11:36
+          </small>
+
+          <strong>
+            Door jou gecorrigeerd
+          </strong>
+
+          <p>
+            Uitstelgedrag aangepast naar informatie voor school.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="activity-item">
+
+        <span class="activity-dot"></span>
+
+        <div>
+
+          <small>
+            Gisteren · 20:11
+          </small>
+
+          <strong>
+            Suggestie gedaan
+          </strong>
+
+          <p>
+            Focus-reminder voorgesteld.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="control-note">
+
+        <span>
+          ✓
+        </span>
+
+        <p>
+          MindMirror voert geen acties uit zonder jouw toestemming.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ======================================================
+       ABOUT AI
+       ====================================================== -->
+
+  <section
+    class="screen"
+    data-screen="about-ai"
+  >
+
+    <header class="topbar">
+
+      <button
+        class="back-btn"
+        data-go="profile"
+      >
+        ‹
+      </button>
+
+      <span>
+        Over de AI
+      </span>
+
+      <div></div>
+
+    </header>
+
+
+    <div class="content">
+
+      <h2>
+        Hoe gebruikt MindMirror AI?
+      </h2>
+
+
+      <p class="lead-small">
+        MindMirror zoekt naar patronen in gegevens
+        waarvoor jij toestemming hebt gegeven.
+      </p>
+
+
+      <div class="soft-card">
+
+        <h3>
+          Wat AI wél kan
+        </h3>
+
+        <p>
+          ✓ Terugkerende gebruiksmomenten herkennen
+        </p>
+
+        <p>
+          ✓ Mogelijke patronen voorstellen
+        </p>
+
+        <p>
+          ✓ Kleine suggesties geven
+        </p>
+
+      </div>
+
+
+      <div class="soft-card">
+
+        <h3>
+          Wat AI níét kan
+        </h3>
+
+        <p>
+          × Weten wat jij denkt
+        </p>
+
+        <p>
+          × Altijd correct weten waarom jij een app opent
+        </p>
+
+        <p>
+          × Een diagnose stellen
+        </p>
+
+        <p>
+          × Zelf apps blokkeren zonder jouw keuze
+        </p>
+
+      </div>
+
+
+      <div class="warning-card">
+
+        <span>
+          !
+        </span>
+
+        <div>
+
+          <strong>
+            Daarom controleer jij de AI
+          </strong>
+
+          <p>
+            Ieder inzicht kan worden bekeken,
+            gecorrigeerd of verwijderd.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn primary full"
+        data-go="insight"
+      >
+        Bekijk een AI-inzicht
+      </button>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
